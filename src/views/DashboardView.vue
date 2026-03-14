@@ -17,8 +17,13 @@ const appointmentStore = useAppointmentStore()
 const authStore = useAuthStore()
 
 const myAppointments = computed(() => {
-  return appointmentStore.appointments.filter((a) => a.email === authStore.user.email)
+  if (!authStore.user) return []
+
+  return appointmentStore.appointments.filter(
+    (a) => a.email === authStore.user.email
+  )
 })
+
 </script>
 
 <style scoped>
