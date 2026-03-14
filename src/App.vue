@@ -1,11 +1,24 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { onMounted } from 'vue'
+import { useAuthStore } from './stores/authStore'
+import Navbar from './components/Navbar.vue'
+import { useAppointmentStore } from './stores/appointmentStore'
+
+const appointmentStore = useAppointmentStore()
+
+onMounted(() => {
+  authStore.loadUser()
+  appointmentStore.loadAppointments()
+})
+
+const authStore = useAuthStore()
+
+onMounted(() => {
+  authStore.loadUser()
+})
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <Navbar />
+  <router-view />
 </template>
-
-<style scoped></style>

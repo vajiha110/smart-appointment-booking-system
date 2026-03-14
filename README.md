@@ -1,73 +1,128 @@
-# smart-appointment-booking
+# Smart Appointment Booking System
 
-This template should help get you started developing with Vue 3 in Vite.
+A role-based appointment booking web application built using Vue 3 and TypeScript.  
+Users can book appointment slots while admins can manage and cancel appointments.
 
-## Recommended IDE Setup
+---
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Features
 
-## Recommended Browser Setup
+- User authentication (Login / Register)
+- Role-based access (Admin / User)
+- Appointment booking with time slots
+- Prevent double booking of slots
+- User dashboard to view appointments
+- Admin dashboard to manage bookings
+- Persistent data using localStorage
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+---
 
-## Type Support for `.vue` Imports in TS
+## Tech Stack
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+Frontend:
 
-## Customize configuration
+- Vue 3
+- TypeScript
+- Vue Router
+- Pinia (State Management)
+- Vite
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+---
 
-## Project Setup
+## Project Structure
 
-```sh
+# Smart Appointment Booking System
+
+A role-based appointment booking web application built using Vue 3 and TypeScript.  
+Users can book appointment slots while admins can manage and cancel appointments.
+
+---
+
+## Features
+
+- User authentication (Login / Register)
+- Role-based access (Admin / User)
+- Appointment booking with time slots
+- Prevent double booking of slots
+- User dashboard to view appointments
+- Admin dashboard to manage bookings
+- Persistent data using localStorage
+
+---
+
+## Tech Stack
+
+Frontend:
+
+- Vue 3
+- TypeScript
+- Vue Router
+- Pinia (State Management)
+- Vite
+
+---
+
+## Project Structure
+
+src
+components
+router
+stores
+views
+HomeView.vue
+LoginView.vue
+RegisterView.vue
+DashboardView.vue
+BookAppointmentView.vue
+AdminDashboardView.vue
+
+---
+
+## Installation
+
+Clone the repository:
+
+git clone https://github.com/your-username/smart-appointment-booking.git
+
+Install dependencies:
+
 npm install
-```
 
-### Compile and Hot-Reload for Development
+Run the development server:
 
-```sh
 npm run dev
-```
 
-### Type-Check, Compile and Minify for Production
+---
 
-```sh
-npm run build
-```
+## Screenshots
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+### Home Page
 
-```sh
-npm run test:unit
-```
+Landing page with login/register options.
 
-### Run End-to-End Tests with [Playwright](https://playwright.dev)
+### Booking Page
 
-```sh
-# Install browsers for the first run
-npx playwright install
+Users can select date and time slots.
 
-# When testing on CI, must build the project first
-npm run build
+### Dashboard
 
-# Runs the end-to-end tests
-npm run test:e2e
-# Runs the tests only on Chromium
-npm run test:e2e -- --project=chromium
-# Runs the tests of a specific file
-npm run test:e2e -- tests/example.spec.ts
-# Runs the tests in debug mode
-npm run test:e2e -- --debug
-```
+Users can view their appointments.
 
-### Lint with [ESLint](https://eslint.org/)
+### Admin Panel
 
-```sh
-npm run lint
-```
+Admins can manage and cancel appointments.
+
+---
+
+## Future Improvements
+
+- Backend API with Node.js + Express
+- Database integration (MongoDB)
+- Email notifications
+- Calendar UI for slot selection
+
+---
+
+## Author
+
+Vajiha Fathema
