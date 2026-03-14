@@ -98,19 +98,27 @@ npm run dev
 
 ### Home Page
 
-Landing page with login/register options.
+![Home](screenshots/home.jpeg)
 
-### Booking Page
+### Login Page
 
-Users can select date and time slots.
+![Login](screenshots/login.jpeg)
 
-### Dashboard
+### Register Page
 
-Users can view their appointments.
+![Register](screenshots/register.jpeg)
 
-### Admin Panel
+### Book Appointment
 
-Admins can manage and cancel appointments.
+![Booking](screenshots/book.jpeg)
+
+### User Dashboard
+
+![Dashboard](screenshots/dashboard.jpeg)
+
+### Admin Dashboard
+
+![Admin](screenshots/admin.jpeg)
 
 ---
 

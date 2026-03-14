@@ -41,24 +41,24 @@ const isBooked = (slot: string) => {
 
 const book = () => {
   if (!date.value || !time.value) {
-    alert("Select date and time")
+    alert('Select date and time')
     return
   }
 
   if (!authStore.user) {
-    alert("Please login first")
+    alert('Please login first')
+
     return
   }
 
   appointmentStore.bookAppointment({
     email: authStore.user.email,
     date: date.value,
-    time: time.value
+    time: time.value,
   })
 
-  alert("Appointment booked")
+  alert('Appointment booked')
 }
-
 </script>
 
 <style scoped>
