@@ -75,7 +75,7 @@ const handleRegister = () => {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #f4f6f9;
+  background-color: grey;
 }
 
 .register-card {
